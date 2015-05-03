@@ -3,6 +3,9 @@ GardenMemo::Application.routes.draw do
   # ルート
   root to: "top#index"
 
+  # devise（ユーザ認証まわり）
+  devise_for :users
+  
   # トップページ
   get "top/index"
 
