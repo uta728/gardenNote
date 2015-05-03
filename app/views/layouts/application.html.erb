@@ -8,7 +8,11 @@
 </head>
 <body>
 
-<%= yield %>
+  <!-- deviseのメッセージ表示用 -->
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+  <%= yield %>
 
 </body>
 </html>
