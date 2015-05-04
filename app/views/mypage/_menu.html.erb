@@ -1,0 +1,12 @@
+<!-- メニュー(共通パーツ)-->
+<div class="mypage-menu">
+  <ul>
+    <li><%= link_to "マイページ", mypage_index_path %></li>
+    <li><%= link_to "予定を立てる", :controller => "calendars", :action => "show" %></li>
+    <li><%= link_to "日誌をつける", new_diary_path %></li>
+    <li><%= link_to "みんなのガーデン", everyone_gardens_index_path %></li>
+    <li><%= link_to "品種管理", :controller => "plants", :action => "show" %></li>
+    <li><%= link_to "設定", setting_index_path %></li>
+    <li><%= link_to "ログアウト", destroy_user_session_path, :method => "delete" %></li>
+  </ul>
+</div>
