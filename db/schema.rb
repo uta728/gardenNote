@@ -129,6 +129,7 @@ ActiveRecord::Schema.define(version: 20150503112213) do
 
   create_table "user_infos", force: true do |t|
     t.integer  "user_id"
+    t.binary   "icon"
     t.string   "name",          limit: 20
     t.string   "sex",           limit: 1
     t.date     "birthday"
